@@ -5,20 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArchiveDecompresser"
         mc:Ignorable="d"
-        Title="ArchiveDecompresser" Height="400" Width="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="ArchiveDecompresser" Height="200" Width="400" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF86B892">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="40*"/>
-            <ColumnDefinition Width="80*"/>
-            <ColumnDefinition Width="68*"/>
-            <ColumnDefinition Width="393*"/>
-            <ColumnDefinition Width="19*"/>
-        </Grid.ColumnDefinitions>
-        <Button Name="ZIP" Content="Decompress ZIP" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="46" Margin="60,80,0,0" VerticalAlignment="Top" Width="400" Click="buttonZip_Click" Background="#FF927D7D" FontWeight="Bold" FontSize="22" Grid.Column="2"/>
-        <Button Name="_7Z" Content="Decompress 7Z" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="46" Margin="60,150,0,0" VerticalAlignment="Top" Width="400" Click="button7z_Click" Background="#FF927D7D" FontWeight="Bold" FontSize="22" Grid.Column="2"/>
-        <Button Name="RAR" Content="Decompress RAR" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="46" Margin="60,220,0,0" VerticalAlignment="Top" Width="400" Click="buttonRar_Click" Background="#FF927D7D" FontWeight="Bold" FontSize="22" Grid.Column="2"/>
-        <Button Name="TAR" Content="Decompress TAR" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="46" Margin="60,290,0,0" VerticalAlignment="Top" Width="400" Click="buttonTar_Click" Background="#FF927D7D" FontWeight="Bold" FontSize="22" Grid.Column="2"/>
-        <Label Content="ARCHIVE DECOMPRESSER" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="49" Margin="60,20,0,0" VerticalAlignment="Top" Width="313" FontWeight="Bold" FontSize="24" Grid.Column="2"/>
+        <Button Name="ZIP" Content="Decompress ZIP, 7Z, RAR, TAR" HorizontalAlignment="Center" Height="46" Margin="0,83,0,0" VerticalAlignment="Top" Width="332" Click="buttonDecompress_Click" Background="#FF927D7D" FontWeight="Bold" FontSize="22"/>
+        <Label Content="ARCHIVE DECOMPRESSER" HorizontalAlignment="Center" Height="49" Margin="0,29,0,0" VerticalAlignment="Top" Width="312" FontWeight="Bold" FontSize="24"/>
     </Grid>
 </Window>
